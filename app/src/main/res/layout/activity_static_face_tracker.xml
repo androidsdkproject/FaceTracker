@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:orientation="vertical"
+    android:background="#fad9d9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StaticFaceTracker"
+    android:keepScreenOn="true">
+    <com.example.android1.facetracker.StaticCustomView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="#fad9d9"
+        android:id="@+id/customview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dip">
+    </com.example.android1.facetracker.StaticCustomView>
+</RelativeLayout>

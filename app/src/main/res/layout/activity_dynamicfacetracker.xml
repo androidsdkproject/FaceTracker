@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DynamicFaceTracker"
+    android:background="#000000"
+    android:keepScreenOn="true">
+
+    <com.example.android1.facetracker.ui.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.android1.facetracker.ui.camera.GraphicOverlay
+            android:id="@+id/faceOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.example.android1.facetracker.ui.camera.CameraSourcePreview>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10sp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_photo_camera_white_48dp"
+        android:id="@+id/captureimage"
+        />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="10sp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/gallary"
+        android:layout_marginBottom="230sp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_photo_white_36dp"
+        android:layout_alignParentRight="true" />
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="10sp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/switchcamera"
+        android:layout_marginBottom="110sp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_switch_camera_white_36dp"
+        android:layout_alignParentRight="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10sp"
+        android:id="@+id/flash"
+        android:layout_marginBottom="170sp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_flash_auto_white_36dp"
+        />
+
+
+</RelativeLayout>

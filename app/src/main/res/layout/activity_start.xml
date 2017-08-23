@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20sp"
+    android:paddingBottom="20sp"
+    android:background="#fad9d9"
+    android:paddingLeft="80sp"
+    android:paddingRight="80sp"
+    tools:context="com.example.android1.facetracker.StartActivity">
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/icon"
+        android:src="@drawable/icon"/>
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/icon"
+        android:id="@+id/appname"
+        android:text="Face Tracker"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="30sp"
+        android:backgroundTint="#acadd6"
+        android:backgroundTintMode="src_in"
+        android:layout_below="@+id/appname"
+        android:onClick="onClick"
+        android:textAllCaps="false"
+        android:text="Face Tracker"
+        android:fontFamily="sans-serif"
+        android:layout_width="match_parent"
+        android:id="@+id/livecamera"
+        android:layout_height="wrap_content" />
+    <Button
+        android:backgroundTintMode="src_in"
+        android:backgroundTint="#acadd6"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseimagefromgallary"
+        android:layout_below="@+id/livecamera"
+        android:onClick="onClick"
+        android:text="Choose Image from Gallary"
+        />
+    <Button
+        android:backgroundTint="#acadd6"
+        android:backgroundTintMode="src_in"
+        android:layout_width="match_parent"
+        android:id="@+id/photoviewer"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:fontFamily="sans-serif"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseimagefromgallary"
+        android:text="Photo Viewer"
+        />
+
+
+</RelativeLayout>
